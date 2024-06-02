@@ -15,7 +15,7 @@ def create_contact():
     email = request.json.get("email") 
     if not first_name or not last_name or not email:
         return (
-            jsonify({"message": "You fill in all fields"}),
+            jsonify({"message": "You must fill in all fields"}),
             400,
         )
 
